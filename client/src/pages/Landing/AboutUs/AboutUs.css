@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.container {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px 50px 50px 50px;
+}
+
+.box_head {
+  text-align: center;
+}
+
+.box {
+  background: linear-gradient(
+    102.28deg,
+    rgba(231, 189, 251, 0.5) -7.7%,
+    rgba(250, 208, 218, 0.5) 38.01%,
+    rgba(168, 198, 243, 0.5) 91.43%
+  );
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}

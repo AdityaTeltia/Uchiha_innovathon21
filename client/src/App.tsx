@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext, useEffect, lazy, Suspense } from "react";
+import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
+import axios, { AxiosResponse } from "axios";
+import { SERVER_URL } from "./config.keys";
+import { SnackbarProvider } from "notistack";
+import Landing from "./pages/Landing/index"
+import Loader from "./pages/LoadingAnimation/Loader";
 
-function App() {
+
+
+
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ height: "auto" }}>
+      <Router>
+        <Suspense fallback={<Loader />}>
+          <Switch>
+            <Route exact path = "/" component={Landing} />
+            <Redirect to="/" />
+          </Switch>
+        </Suspense>
+      </Router>
     </div>
   );
-}
+};
+
 
 export default App;
