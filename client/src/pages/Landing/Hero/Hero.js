@@ -42,7 +42,7 @@ const Hero = () => {
             }}
             className="btns"
           >
-            <Button href = "/home" variant="contained" >Create/Join Private Room</Button>
+            <Button href = "/login" variant="contained" >Login</Button>
             <Button href = "/room/public-room" variant="outlined" style = {{color: "white"}}>Login as Guest</Button>
           </div>
         </div>
