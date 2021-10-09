@@ -48,14 +48,6 @@ const NavigateRoom = () => {
     if (showNotification) enqueueSnackbar("the room you want to enter is full", { variant: "warning" });
   }, []);
 
-  const logoutUser = async () => {
-    localStorage.removeItem("isLoggedIn");
-    localStorage.removeItem("name");
-    localStorage.removeItem("image_link");
-    const response = await axios.get(`${SERVER_URL}/api/logout`);
-    logoutUserInfo();
-    setBackToLoginPage(true);
-  };
 
   return (
     <>
@@ -65,20 +57,16 @@ const NavigateRoom = () => {
             <span>
               <img src={Logo} width="55x" height="55x"></img>
             </span>
-            <span className={styles.toolbarText}>Caucus</span>
+            <span className={styles.toolbarText}>Cocode</span>
           </div>
           <div className={styles.avatarFlex}>
             <LightTooltip TransitionComponent={Zoom} title={user?.name || "John Doe"} placement="bottom">
               <Avatar alt={user?.name} src={user?.image_link} />
             </LightTooltip>
 
-            <Button
-              onClick={async () => {
-                await logoutUser();
-              }}
-            >
+            <Link to="/" style = {{textDecoration:'none' , color:'black' , marginLeft:'10px' , textAlign:'center'}}>
               Logout
-            </Button>
+            </Link>
           </div>
         </Paper>
         <Grid container direction="column">
@@ -110,10 +98,7 @@ const NavigateRoom = () => {
           </Grid>
         </Grid>
         <footer>
-          Made with <span>&#9829;</span> by Rishabh Malhotra{"  "}•{"  "}
-          <a href="https://github.com/Rishabh-malhotraa/codeforces-diary" target="__blank">
-            Github
-          </a>
+          Made with <span>&#9829;</span> and Typescript
         </footer>
         {click ? <Redirect to={`/room/${link}`} /> : <></>}
         {backToLoginPage ? <Redirect to={`/`} /> : <></>}

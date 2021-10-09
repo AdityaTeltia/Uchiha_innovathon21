@@ -36,9 +36,9 @@ const Navbar = () => {
         >
           CoCode
         </IconButton>
-        <Link to="/login" style = {{textDecoration:"none"}}>
+        <Link to="/home" style = {{textDecoration:"none"}}>
           <Button color="success" variant="contained">
-            Login
+            CREATE/JOIN ROOM
           </Button>
         </Link>
       </AppBar>
