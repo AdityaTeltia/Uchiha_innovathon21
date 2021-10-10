@@ -4,7 +4,7 @@ Domain: Full Stack <br>
 Track: Online Judge
 
 <p align ="center">
-  <img src = "https://drive.google.com/file/d/1EEVlEW3waHSFT6Lzu8UGY5S-QTgPWibn/view?usp=sharing ">
+  <img src = "https://drive.google.com/file/d/1EEVlEW3waHSFT6Lzu8UGY5S-QTgPWibn/view?usp=sharing" />
   
 </p>
 
