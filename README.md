@@ -100,7 +100,7 @@ Refer to this [article](https://medium.com/swlh/guide-to-git-a-practical-approac
 
 ## License
 
-Distributed under the MIT License. See [`LICENSE`][license-url] for more information.
+Distributed under the MIT License.
 
 ---
 
