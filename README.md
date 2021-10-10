@@ -2,11 +2,10 @@
 <h1> A Collaborative Platform for all the users Who Loves Coding </h1>
 Domain: Full Stack <br>
 Track: Online Judge
-
+<!-- 
 <p align ="center">
   <img src = "https://drive.google.com/file/d/1EEVlEW3waHSFT6Lzu8UGY5S-QTgPWibn/view?usp=sharing" />
-  
-</p>
+</p> -->
 
 ## JDOODLE
 [Visit Website](https://www.jdoodle.com/)
