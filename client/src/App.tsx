@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from "react";
-import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import GuestNameProvider from "./service/GuestNameContext";
 import SettingsProvider from "./service/SettingsContext";
 import TabsProvider from "./service/TabsContext";

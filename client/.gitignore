@@ -16,11 +16,8 @@
 .env.development.local
 .env.test.local
 .env.production.local
-<<<<<<< HEAD
 .eslintcache
-=======
-.env
->>>>>>> 3cab7018b4dcfec985c89b9185f66b622c1b8d7b
+.netlify
 
 npm-debug.log*
 yarn-debug.log*
