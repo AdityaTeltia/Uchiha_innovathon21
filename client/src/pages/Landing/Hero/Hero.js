@@ -42,8 +42,8 @@ const Hero = () => {
             }}
             className="btns"
           >
-            <Button href = "/home" variant="contained" >CREATE/JOIN ROOM</Button>
-            <Button href = "/room/public-room" variant="outlined" style = {{color: "white"}}>Login as Guest</Button>
+            <Link to = "/home" style = {{textDecoration:"none"}}><Button variant = "contained">CREATE/JOIN ROOM</Button></Link>
+            <Link to = "/room/public-room" style = {{color: "white" , textDecoration:"none"}}><Button variant = "outlined">Login as Guest</Button></Link>
           </div>
         </div>
         <div className="Image">
