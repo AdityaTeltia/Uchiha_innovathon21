@@ -8,6 +8,7 @@ import http from "http";
 import bodyParser from "body-parser";
 import socketioService from "./service/socket-io-service";
 import session from "express-session";
+import apiRoutes from "./routes/api-routes";
 
 
 const app = express();
@@ -51,11 +52,14 @@ app.use(passport.session()); // deserialize cookie from the browser
 
 socketioService(httpServer);
 
+app.use('/api',apiRoutes);
+
 app.use("/", (req, res) =>
   res.send(`
   <h1>Server is Running :)</h1>
 `)
 );
+
 
 httpServer.listen(port, () => console.log(chalk.blueBright(`Express Server listening to port ${port}`)));
 

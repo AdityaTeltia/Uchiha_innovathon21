@@ -33,7 +33,7 @@ router.post("/execute", async (req, res) => {
 
   const response = await axios({
     method: "POST",
-    url: `${JDOODLE_URL}/execute`,
+    url: `${JDOODLE_URL}`,
     data: {
       script: script,
       stdin: stdin,

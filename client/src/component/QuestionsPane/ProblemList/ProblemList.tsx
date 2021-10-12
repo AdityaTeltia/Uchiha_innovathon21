@@ -207,7 +207,7 @@ const ProblemList: React.FC<AppProps> = ({
         </Grid>
         <Divider className={styles.divider} />
         <Grid item container direction="column" className={styles.pagination}>
-          <ListPagination rows={response} />
+          {/* <ListPagination rows={response} /> */}
         </Grid>
       </Grid>
     </>
